@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public List<GameObject> realWorldPlatforms = new List<GameObject>();
-    public List<GameObject> imaginaryWorldPlatforms = new List<GameObject>();
+    public List<PlatformController> realWorldPlatforms = new List<PlatformController>();
+    public List<PlatformController> imaginaryWorldPlatforms = new List<PlatformController>();
 
     public bool isImaginaryWorld;
 
@@ -15,28 +15,32 @@ public class GameManager : Singleton<GameManager>
         SwapBetweenWorlds(realWorldPlatforms, imaginaryWorldPlatforms);
     }
 
-    public void SwapBetweenWorlds(List<GameObject> realPlatforms, List<GameObject> imaginaryPlatforms)
+    public void SwapBetweenWorlds(List<PlatformController> realPlatforms, List<PlatformController> imaginaryPlatforms)
     {
         if(!isImaginaryWorld)
         {
-            foreach(GameObject platform in realPlatforms)
+            foreach(PlatformController platform in realPlatforms)
             {
-                platform.SetActive(true);
+                platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.realWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = true;
             }
-            foreach(GameObject platform in imaginaryPlatforms)
+            foreach(PlatformController platform in imaginaryPlatforms)
             {
-                platform.SetActive(false);
+                platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.realWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
         else
         {
-            foreach (GameObject platform in realPlatforms)
+            foreach (PlatformController platform in realPlatforms)
             {
-                platform.SetActive(false);
+                platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.imaginaryWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = false;
             }
-            foreach (GameObject platform in imaginaryPlatforms)
+            foreach (PlatformController platform in imaginaryPlatforms)
             {
-                platform.SetActive(true);
+                platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.imaginaryWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
     }
