@@ -11,11 +11,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
 
+    public Vector2 startPosition;
+
     // Start is called before the first frame update
     void Start()
     {
 
         _rigidbody = GetComponent<Rigidbody2D>();
+        startPosition = transform.position;
 
     }
 
@@ -36,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.allPlatforms);
         }
     }
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
@@ -47,4 +50,19 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
         GetComponent<AudioSource>().Play();
     }
+	
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<ObjectiveController>())
+        {
+            GameManager.Instance.Victory();
+        }
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = startPosition;
+    }
+
+    
 }

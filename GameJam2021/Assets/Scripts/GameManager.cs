@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public List<PlatformController> allPlatforms = new List<PlatformController>();
+    public ObjectiveController objective;
+    public PlayerMovement player;
 
     public bool isImaginaryWorld;
 
@@ -21,5 +23,11 @@ public class GameManager : Singleton<GameManager>
             platform.gameObject.GetComponent<SpriteRenderer>().sprite = isImaginaryWorld ? platform.imaginaryWorldSprite : platform.realWorldSprite;
             platform.GetComponent<BoxCollider2D>().enabled = platform.isImaginary ? isImaginaryWorld : !isImaginaryWorld;
         }
+    }
+
+    public void Victory()
+    {
+        print("You won!");
+        player.ResetPosition();
     }
 }
