@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
-            GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.realWorldPlatforms, GameManager.Instance.imaginaryWorldPlatforms);
+            GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.allPlatforms);
         }
     }
 

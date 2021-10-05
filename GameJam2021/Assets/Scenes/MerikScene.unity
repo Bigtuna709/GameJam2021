@@ -362,6 +362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  isImaginary: 1
 --- !u!1 &55878256
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  isImaginary: 1
 --- !u!1 &154093523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,6 +2068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  isImaginary: 1
 --- !u!61 &809081071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2195,6 +2198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  isImaginary: 0
 --- !u!212 &977222266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2401,6 +2405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  isImaginary: 0
 --- !u!1 &1025453136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  isImaginary: 0
 --- !u!1 &1035200416
 GameObject:
   m_ObjectHideFlags: 0
