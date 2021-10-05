@@ -15,25 +15,19 @@ public class GameManager : Singleton<GameManager>
         SwapBetweenWorlds(realWorldPlatforms, imaginaryWorldPlatforms);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            isImaginaryWorld = !isImaginaryWorld;
-            GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.realWorldPlatforms, GameManager.Instance.imaginaryWorldPlatforms);
-        }
-    }
     public void SwapBetweenWorlds(List<PlatformController> realPlatforms, List<PlatformController> imaginaryPlatforms)
     {
         if(!isImaginaryWorld)
         {
             foreach(PlatformController platform in realPlatforms)
             {
-                platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.realWorldSprite; 
+                platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.realWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = true;
             }
             foreach(PlatformController platform in imaginaryPlatforms)
             {
                 platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.realWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
         else
@@ -41,10 +35,12 @@ public class GameManager : Singleton<GameManager>
             foreach (PlatformController platform in realPlatforms)
             {
                 platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.imaginaryWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = false;
             }
             foreach (PlatformController platform in imaginaryPlatforms)
             {
                 platform.gameObject.GetComponent<SpriteRenderer>().sprite = platform.imaginaryWorldSprite;
+                platform.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
     }

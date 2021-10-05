@@ -26,6 +26,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-        }        
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+            GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.realWorldPlatforms, GameManager.Instance.imaginaryWorldPlatforms);
+        }
     }
 }
