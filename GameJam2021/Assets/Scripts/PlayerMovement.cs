@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public float MovementSpeed = 1;
     public float JumpForce = 1;
-    private float mov;
 
     private Rigidbody2D _rigidbody;
 
@@ -22,7 +21,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         var movement = Input.GetAxis("Horizontal");
-        mov = movement;
+        if (movement != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+            GetComponent<AudioSource>().Play();
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
@@ -34,14 +34,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
             GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.allPlatforms);
-        }
-    }
-
-    void FixedUpdate()
-    {
-        if (mov != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
-        {
-            GetComponent<AudioSource>().Play();
         }
     }
 }
