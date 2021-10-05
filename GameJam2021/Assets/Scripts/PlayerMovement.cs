@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float MovementSpeed = 1;
     public float movement;
     public float JumpForce = 1;
+    public AudioClip[] audioClips;
 
     private Rigidbody2D _rigidbody;
 
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (movement != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
-            GetComponent<AudioSource>().Play();
+            PlayRandom();
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
@@ -39,5 +40,11 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+    }
+
+    void PlayRandom()
+    {
+        GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
+        GetComponent<AudioSource>().Play();
     }
 }
