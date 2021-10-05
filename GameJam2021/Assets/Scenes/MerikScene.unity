@@ -1739,11 +1739,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistOnSceneLoad: 0
-  realWorldPlatforms:
+  allPlatforms:
   - {fileID: 977222265}
   - {fileID: 1025453140}
   - {fileID: 987112859}
-  imaginaryWorldPlatforms:
   - {fileID: 809081070}
   - {fileID: 55878260}
   - {fileID: 51647179}
@@ -2652,6 +2651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 7
+  movement: 0
   JumpForce: 9
 --- !u!50 &1158495399
 Rigidbody2D:
