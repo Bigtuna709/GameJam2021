@@ -95,5 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  realWorldSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  imaginaryWorldSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  realWorldSprite: {fileID: 6662118814431821974}
+  imaginaryWorldSprite: {fileID: 2076695606075773975, guid: cdb0f5b0de3cb7b44b575aa04c465a77, type: 3}
