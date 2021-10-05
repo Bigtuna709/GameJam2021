@@ -1746,6 +1746,8 @@ MonoBehaviour:
   - {fileID: 809081070}
   - {fileID: 55878260}
   - {fileID: 51647179}
+  objective: {fileID: 0}
+  player: {fileID: 0}
   isImaginaryWorld: 0
 --- !u!1 &747312322
 GameObject:
@@ -2657,6 +2659,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 783a732e0f657e54a9f0dde25a15c1ba, type: 3}
   - {fileID: 8300000, guid: 89ef4dee391d74c4fa07765368ceb3ad, type: 3}
   - {fileID: 8300000, guid: 2977df60435ea044381bc9674f30fc98, type: 3}
+  startPosition: {x: 0, y: 0}
 --- !u!50 &1158495399
 Rigidbody2D:
   serializedVersion: 4
@@ -3979,6 +3982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1935726524}
   - component: {fileID: 1935726523}
+  - component: {fileID: 1935726525}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -4096,6 +4100,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935726525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935726522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86496badb4035ed4bae91db5ec787dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistOnSceneLoad: 1
 --- !u!1 &2002130039
 GameObject:
   m_ObjectHideFlags: 0
