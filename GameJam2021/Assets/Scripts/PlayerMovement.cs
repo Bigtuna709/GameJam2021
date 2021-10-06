@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
-            GameManager.Instance.SwapBetweenWorlds(GameManager.Instance.allPlatforms);
+            GameManager.Instance.SwapBetweenWorlds();
         }
     }
     void FixedUpdate()
@@ -59,9 +59,23 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Lava") && GameManager.Instance.isImaginaryWorld)
+        {
+            Death();
+        }
+    }
+
     public void ResetPosition()
     {
         transform.position = startPosition;
+    }
+
+    public void Death()
+    {
+        print("You died!");
+        GameManager.Instance.ResetLevel();
     }
 
     

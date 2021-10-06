@@ -17,10 +17,10 @@ public class GameManager : Singleton<GameManager>
         collectedObjectives = 0;
         totalObjectives = objectives.Count;
         isImaginaryWorld = false;
-        SwapBetweenWorlds(allPlatforms);
+        SwapBetweenWorlds();
     }
 
-    public void SwapBetweenWorlds(List<PlatformController> allPlatforms)
+    public void SwapBetweenWorlds()
     {
         foreach (PlatformController platform in allPlatforms)
         {
@@ -42,8 +42,15 @@ public class GameManager : Singleton<GameManager>
     public void Victory()
     {
         print("You won!");
+        ResetLevel();
+    }
+
+    public void ResetLevel()
+    {
         player.ResetPosition();
         collectedObjectives = 0;
         objectives.ForEach(o => o.gameObject.SetActive(true));
+        isImaginaryWorld = false;
+        SwapBetweenWorlds();
     }
 }
