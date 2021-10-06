@@ -33,12 +33,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.01f)
-            {
-                Jump();
-            }
-
-        if (movement != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+        //if (movement != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
             //PlayRandom();
 
 
@@ -48,13 +43,18 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.SwapBetweenWorlds();
         }
 
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.01f)
+        {
+            Jump();
+        }
+
         if (movement != 0)
         {
-            if(!currentState.Equals("Jumping"))
+            if (!currentState.Equals("Jump"))
             {
                 SetCharacterState("Run");
             }
-            if(movement > 0)
+            if (movement > 0)
             {
                 transform.localScale = new Vector2(-1f, 1f);
             }
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale = new Vector2(1f, 1f);
             }
         }
-        else 
+        else if (!currentState.Equals("Jump"))
         {
             SetCharacterState("Idle");
         }
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
 
-        if (!currentState.Equals("Jumping"))
+        if (!currentState.Equals("Jump"))
         {
             previousState = currentState;
         }

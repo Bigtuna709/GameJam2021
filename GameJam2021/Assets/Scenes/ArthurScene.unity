@@ -245,6 +245,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 783a732e0f657e54a9f0dde25a15c1ba, type: 3}
   - {fileID: 8300000, guid: 89ef4dee391d74c4fa07765368ceb3ad, type: 3}
   - {fileID: 8300000, guid: 2977df60435ea044381bc9674f30fc98, type: 3}
+  skeletonAnimation: {fileID: 0}
+  idle: {fileID: 0}
+  run: {fileID: 0}
+  jump: {fileID: 0}
+  currentState: 
+  previousState: 
+  currentAnimation: 
   startPosition: {x: 0, y: 0}
 --- !u!4 &31891963
 Transform:
@@ -722,7 +729,7 @@ GameObject:
   - component: {fileID: 57375818}
   m_Layer: 0
   m_Name: Wall_Left (5)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +911,7 @@ GameObject:
   - component: {fileID: 62242494}
   m_Layer: 0
   m_Name: Ground1
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1355,7 +1362,7 @@ GameObject:
   - component: {fileID: 96325620}
   m_Layer: 0
   m_Name: Ground1 (3)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2139,7 +2146,7 @@ GameObject:
   - component: {fileID: 213493649}
   m_Layer: 0
   m_Name: Ground1 (1)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2373,7 +2380,7 @@ GameObject:
   - component: {fileID: 222067418}
   m_Layer: 0
   m_Name: Wall_Left (4)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3764,7 +3771,7 @@ GameObject:
   - component: {fileID: 404501645}
   m_Layer: 0
   m_Name: Wall_Left (2)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4208,7 +4215,7 @@ GameObject:
   - component: {fileID: 494646142}
   m_Layer: 0
   m_Name: Wall_Left (1)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4844,7 +4851,7 @@ GameObject:
   - component: {fileID: 615606483}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5955,7 +5962,7 @@ GameObject:
   - component: {fileID: 907067665}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6150,7 +6157,7 @@ GameObject:
   - component: {fileID: 923781133}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6982,7 +6989,7 @@ GameObject:
   - component: {fileID: 1085730246}
   m_Layer: 0
   m_Name: Ground1 (4)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8744,7 +8751,7 @@ GameObject:
   - component: {fileID: 1371963942}
   m_Layer: 0
   m_Name: Wall_Left
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9365,7 +9372,7 @@ GameObject:
   - component: {fileID: 1479118336}
   m_Layer: 0
   m_Name: Ground1 (5)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10118,7 +10125,7 @@ GameObject:
   - component: {fileID: 1659586322}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11625,7 +11632,7 @@ GameObject:
   - component: {fileID: 1945122235}
   m_Layer: 0
   m_Name: Ground1 (2)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12309,7 +12316,7 @@ GameObject:
   - component: {fileID: 2013538145}
   m_Layer: 0
   m_Name: Wall_Left (3)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

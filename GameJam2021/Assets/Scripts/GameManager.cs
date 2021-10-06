@@ -48,8 +48,8 @@ public class GameManager : Singleton<GameManager>
     public void ResetLevel()
     {
         player.ResetPosition();
-        collectedObjectives = 0;
         objectives.ForEach(o => o.gameObject.SetActive(true));
+        collectedObjectives = 0;
         isImaginaryWorld = false;
         SwapBetweenWorlds();
     }
