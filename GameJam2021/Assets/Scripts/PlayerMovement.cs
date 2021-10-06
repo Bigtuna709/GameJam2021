@@ -53,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
 	
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<ObjectiveController>())
+        if (collision.CompareTag("Objective"))
         {
-            GameManager.Instance.Victory();
+            collision.GetComponent<ObjectiveController>().Collect();
         }
     }
 

@@ -5,13 +5,17 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public List<PlatformController> allPlatforms = new List<PlatformController>();
-    public ObjectiveController objective;
+    public List<ObjectiveController> objectives = new List<ObjectiveController>();
+    public int collectedObjectives;
+    public int totalObjectives;
     public PlayerMovement player;
 
     public bool isImaginaryWorld;
 
     private void Start()
     {
+        collectedObjectives = 0;
+        totalObjectives = objectives.Count;
         isImaginaryWorld = false;
         SwapBetweenWorlds(allPlatforms);
     }
@@ -25,9 +29,21 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public void CollectObjective()
+    {
+        collectedObjectives++;
+        print(collectedObjectives + " / " + totalObjectives + " items collected!");
+        if(collectedObjectives == totalObjectives)
+        {
+            Victory();
+        }
+    }
+
     public void Victory()
     {
         print("You won!");
         player.ResetPosition();
+        collectedObjectives = 0;
+        objectives.ForEach(o => o.gameObject.SetActive(true));
     }
 }
