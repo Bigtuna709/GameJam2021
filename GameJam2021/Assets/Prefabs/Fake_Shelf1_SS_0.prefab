@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3712553356935491323}
   - component: {fileID: 561419846950431763}
   - component: {fileID: 2295680579406305931}
+  - component: {fileID: 7653237631422264505}
   m_Layer: 0
   m_Name: Fake_Shelf1_SS_0
   m_TagString: Untagged
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 0}
   imaginaryWorldSprite: {fileID: 5740412162217999277, guid: b4653e8d4b884bb40985f05913de0108, type: 3}
+  animator: {fileID: 7653237631422264505}
   isImaginary: 1
 --- !u!61 &2295680579406305931
 BoxCollider2D:
@@ -125,3 +127,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5035706, y: 0.8425579}
   m_EdgeRadius: 0
+--- !u!95 &7653237631422264505
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373721330420416030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15d73dd701cd60941b15f6cd2d2349c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

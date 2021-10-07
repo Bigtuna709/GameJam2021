@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8883752241656927286}
   - component: {fileID: 6110391118476384819}
   - component: {fileID: 7743263971024499944}
+  - component: {fileID: 3923811562601348706}
   m_Layer: 0
   m_Name: Fake_Shelf2_SS_0
   m_TagString: Untagged
@@ -124,4 +125,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 0}
   imaginaryWorldSprite: {fileID: 2223761847915673421, guid: e49ee38407a91ef49a0f01ec0c4076e1, type: 3}
+  animator: {fileID: 3923811562601348706}
   isImaginary: 1
+--- !u!95 &3923811562601348706
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586548260056828517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d017858e7d7e95841a962d9b4227fd79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
