@@ -432,7 +432,9 @@ GameObject:
   - component: {fileID: 1330409506}
   - component: {fileID: 1330409505}
   - component: {fileID: 1330409504}
+  - component: {fileID: 1330409509}
   - component: {fileID: 1330409507}
+  - component: {fileID: 1330409508}
   m_Layer: 0
   m_Name: PlayButton
   m_TagString: Untagged
@@ -547,7 +549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5640728250934615733, guid: ece28a56228175d4bbc2f6b4333c6958, type: 3}
+  m_Sprite: {fileID: 1783175259539162537, guid: ece28a56228175d4bbc2f6b4333c6958, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -577,6 +579,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4fe21c702ab1844af62873e1d9a651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1330409508
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330409502}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a3df9bce538039429a4c04b05a517f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1330409509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330409502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c5d7fe36345fd4eb80440ae5359a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 1330409503}
 --- !u!82 &1367304583 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1976451568944305928, guid: d88a6f53d9b9ffe43b4272894fcd2d6a, type: 3}
@@ -847,7 +881,9 @@ GameObject:
   - component: {fileID: 1783179869}
   - component: {fileID: 1783179868}
   - component: {fileID: 1783179867}
+  - component: {fileID: 1783179872}
   - component: {fileID: 1783179870}
+  - component: {fileID: 1783179871}
   m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
@@ -962,7 +998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5977618365981772807, guid: ece28a56228175d4bbc2f6b4333c6958, type: 3}
+  m_Sprite: {fileID: 3273069856496492364, guid: ece28a56228175d4bbc2f6b4333c6958, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -992,6 +1028,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4fe21c702ab1844af62873e1d9a651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1783179871
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783179865}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2c95ba199386dec45a798261258caad5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1783179872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783179865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3880028f937c0d2499647eceeac7f68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 1783179866}
 --- !u!1 &1924230865
 GameObject:
   m_ObjectHideFlags: 0
