@@ -35,7 +35,7 @@ public class GameManager : Singleton<GameManager>
     public void PauseGame()
     {
         isPaused = !isPaused;
-        if (!isPaused)
+        if (isPaused)
         {
             Time.timeScale = 0;
             pauseCanvas.SetActive(true);

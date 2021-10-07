@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip[] audioClips;
 
     public SkeletonAnimation skeletonAnimation;
-    public AnimationReferenceAsset idle, run, jump;
+    public AnimationReferenceAsset idle, idle2, run, jump;
     public string currentState;
     public string previousState;
     public string currentAnimation;
@@ -49,10 +49,20 @@ public class PlayerMovement : MonoBehaviour
             {
                 Jump();
             }
-            else if (movement == 0)
+            else if (movement == 0 && !currentState.Equals("Idle2") && !currentState.Equals("Idle"))
             {
-                SetCharacterState("Idle");
+                StartCoroutine(IdleState());
             }
+        }
+    }
+
+    private IEnumerator IdleState()
+    {
+        SetCharacterState("Idle");
+        yield return new WaitForSeconds(2f);
+        if (_rigidbody.velocity.y < 0.1f )
+        {
+            SetCharacterState("Idle2");
         }
     }
 
@@ -79,7 +89,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentState.Equals("Run") && movement == 0)
         {
-            SetCharacterState("Idle");
+            //SetCharacterState("Idle");
+
         } else if (movement != 0 && (currentState.Equals("Idle") || Mathf.Abs(_rigidbody.velocity.y) == 0))
         {
             SetCharacterState("Run");
@@ -132,10 +143,14 @@ public class PlayerMovement : MonoBehaviour
     public void SetCharacterState(string state)
     {
         currentState = state;
-
-        if(state.Equals("Run"))
+        
+        if (state.Equals("Run"))
         {
             SetAnimation(run, true, 1f);
+        }
+        else if (state.Equals("Idle2"))
+        {
+            SetAnimation(idle2, true, 1f);
         }
         else if(state.Equals("Jump"))
         {
