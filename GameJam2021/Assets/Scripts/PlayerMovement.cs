@@ -43,42 +43,23 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.SwapBetweenWorlds();
         }
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.01f)
+        if (Mathf.Abs(_rigidbody.velocity.y) == 0)
         {
-            Jump();
-        }
-
-        if (movement != 0)
-        {
-            if (!currentState.Equals("Jump"))
+            if (Input.GetButtonDown("Jump"))
             {
-                SetCharacterState("Run");
+                Jump();
             }
-            if (movement > 0)
+            else if (movement == 0)
             {
-                transform.localScale = new Vector2(-1f, 1f);
+                SetCharacterState("Idle");
             }
-            else
-            {
-                transform.localScale = new Vector2(1f, 1f);
-            }
-        }
-        else if (!currentState.Equals("Jump"))
-        {
-            SetCharacterState("Idle");
         }
     }
 
     private void Jump()
     {
         _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-
-        if (!currentState.Equals("Jump"))
-        {
-            previousState = currentState;
-        }
         SetCharacterState("Jump");
-        
     }
 
     void FixedUpdate()
@@ -90,6 +71,15 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        transform.localScale = movement > 0 ? new Vector2(-1f, 1f) : new Vector2(1f, 1f);
+
+        if (currentState.Equals("Run") && movement == 0)
+        {
+            SetCharacterState("Idle");
+        } else if (movement != 0 && (currentState.Equals("Idle") || Mathf.Abs(_rigidbody.velocity.y) == 0))
+        {
+            SetCharacterState("Run");
+        }
     }   
 
     void PlayRandom()
@@ -121,7 +111,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
-        print("You died!");
         GameManager.Instance.ResetLevel();
     }
 
@@ -133,20 +122,12 @@ public class PlayerMovement : MonoBehaviour
         }
         Spine.TrackEntry animationEntry = skeletonAnimation.state.SetAnimation(0, animation, loop);
         animationEntry.TimeScale = timeScale;
-        animationEntry.Complete += AnimationEntry_Complete;
         currentAnimation = animation.name;
-    }
-
-    private void AnimationEntry_Complete(TrackEntry trackEntry)
-    {
-        if(currentState.Equals("Jump"))
-        {
-            SetCharacterState(previousState);
-        }
     }
 
     public void SetCharacterState(string state)
     {
+        currentState = state;
 
         if(state.Equals("Run"))
         {
@@ -154,12 +135,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(state.Equals("Jump"))
         {
-            SetAnimation(jump, false, 1f);
+            SetAnimation(jump, false, .5f);
         }
         else
         {
             SetAnimation(idle, true, 1f);
         }
-        currentState = state;
     }
 }
