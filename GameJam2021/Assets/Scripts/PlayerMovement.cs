@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayRandom()
     {
-        GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
+        //GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
         GetComponent<AudioSource>().Play();
     }
 	
