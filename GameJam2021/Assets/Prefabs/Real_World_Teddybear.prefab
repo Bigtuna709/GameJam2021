@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 3194822050565356682}
   - component: {fileID: 3194822050565356685}
   - component: {fileID: 3194822050565356680}
+  - component: {fileID: 3362903100977955627}
   m_Layer: 0
   m_Name: Real_World_Teddybear
   m_TagString: Untagged
@@ -145,4 +146,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: -1133657439776160421, guid: 611727eee09e0b546aac5ff959b0e40f, type: 3}
   imaginaryWorldSprite: {fileID: -3651551150362337159, guid: e95acda04cbfb7946b33a9beaf6a0718, type: 3}
+  animator: {fileID: 3362903100977955627}
   isImaginary: 0
+--- !u!95 &3362903100977955627
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194822050565356684}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15289a5e79f8d584c83f4080f7761113, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

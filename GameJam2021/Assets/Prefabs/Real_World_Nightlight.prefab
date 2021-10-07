@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1346654176778009515}
   - component: {fileID: 1346654176778009514}
   - component: {fileID: 1346654176778009512}
+  - component: {fileID: 7596194982783822137}
   m_Layer: 0
   m_Name: Real_World_Nightlight
   m_TagString: Untagged
@@ -97,4 +98,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: -8162467180889439898, guid: 611727eee09e0b546aac5ff959b0e40f, type: 3}
   imaginaryWorldSprite: {fileID: 721162749157508736, guid: b47a30f1d4d6d954590fbe7830370d62, type: 3}
+  animator: {fileID: 7596194982783822137}
   isImaginary: 0
+--- !u!95 &7596194982783822137
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346654176778009493}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9734253188c2974e87a43fbc19ec7ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2287255111926525820}
   m_Layer: 0
   m_Name: MicToy_Collectable
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

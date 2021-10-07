@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7285848089267536399}
   - component: {fileID: 7285848089267536398}
   - component: {fileID: 7285848089267536384}
+  - component: {fileID: 4447884230712571584}
   m_Layer: 0
   m_Name: Real_World_Shelf
   m_TagString: Untagged
@@ -98,7 +99,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: -1179394664976224180, guid: 611727eee09e0b546aac5ff959b0e40f, type: 3}
   imaginaryWorldSprite: {fileID: 6674170594727003742, guid: 814aa0655c71fce42917f4a1db18f97c, type: 3}
+  animator: {fileID: 4447884230712571584}
   isImaginary: 0
+--- !u!95 &4447884230712571584
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7285848089267536396}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 523c6c5054f900c4eaf8d97fb5bedfa3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8584724267130404007
 GameObject:
   m_ObjectHideFlags: 0

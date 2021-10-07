@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 4426909746148889605}
   - component: {fileID: 4426909746148889604}
   - component: {fileID: 4426909746148889614}
+  - component: {fileID: 7376348686521587853}
   m_Layer: 0
   m_Name: Real_World_Bed
   m_TagString: Untagged
@@ -226,4 +227,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: -1270306584076893707, guid: 611727eee09e0b546aac5ff959b0e40f, type: 3}
   imaginaryWorldSprite: {fileID: -7705270777597073486, guid: 68ddfd538efd84145828b4fa244c7d26, type: 3}
+  animator: {fileID: 7376348686521587853}
   isImaginary: 0
+--- !u!95 &7376348686521587853
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426909746148889607}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2859397a34ae5844ea8f3483371807e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

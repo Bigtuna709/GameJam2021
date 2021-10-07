@@ -413,18 +413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
---- !u!114 &34266831 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5260753870562449581, guid: ca3e9a3bf787efd4594aecdacc1caf8d, type: 3}
-  m_PrefabInstance: {fileID: 6610201454663560372}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &34266834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3582394785153270760, guid: ca3e9a3bf787efd4594aecdacc1caf8d, type: 3}
@@ -554,6 +544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &55308544
 GameObject:
@@ -1070,7 +1061,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4426909746148889605, guid: 8951f8ca0223d544eb6d56740bd25a03, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4426909746148889605, guid: 8951f8ca0223d544eb6d56740bd25a03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1263,6 +1254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &88655518
 GameObject:
@@ -1475,6 +1467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &96325618
 GameObject:
@@ -1714,6 +1707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &111706990
 PrefabInstance:
@@ -1845,6 +1839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &132715506
 GameObject:
@@ -1933,17 +1928,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8707470355889597925, guid: 2d206aef9dd715848a9fc2fa6da9a500, type: 3}
   m_PrefabInstance: {fileID: 8707470355754944521}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &135243246 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4939425080561740039, guid: 2d206aef9dd715848a9fc2fa6da9a500, type: 3}
-  m_PrefabInstance: {fileID: 8707470355754944521}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &149648599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,6 +2052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &167927694
 GameObject:
@@ -2458,6 +2443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &188289135
 PrefabInstance:
@@ -2589,6 +2575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &206867139
 PrefabInstance:
@@ -2901,6 +2888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &222067416
 GameObject:
@@ -3140,6 +3128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &253141224
 GameObject:
@@ -3880,6 +3869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &372272277
 GameObject:
@@ -4175,6 +4165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &377702721
 PrefabInstance:
@@ -4189,7 +4180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1346654176778009515, guid: 408b0a8f8d3768647a671d3614dafcfd, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1346654176778009515, guid: 408b0a8f8d3768647a671d3614dafcfd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4363,6 +4354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &400784194
 PrefabInstance:
@@ -4658,6 +4650,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &420348790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 720124750}
+    m_Modifications:
+    - target: {fileID: 7285848089267536396, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_Name
+      value: Real_World_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -131.30055
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -43.498608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 137.43828
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
 --- !u!1 &438878164
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,23 +4739,12 @@ MonoBehaviour:
   persistOnSceneLoad: 0
   player: {fileID: 27866699}
   allPlatforms:
-  - {fileID: 456818191}
-  - {fileID: 2070953787}
-  - {fileID: 1187056073}
-  - {fileID: 1577852872}
   - {fileID: 1091665874}
+  - {fileID: 1577852872}
   - {fileID: 214043173}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 34266831}
-  - {fileID: 1160499489}
-  - {fileID: 135243246}
-  - {fileID: 1647490544}
-  - {fileID: 1980064208}
+  - {fileID: 456818191}
+  - {fileID: 964290721}
+  - {fileID: 2070953787}
   objectives:
   - {fileID: 1113698502}
   - {fileID: 70351106}
@@ -4831,6 +4869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 21300000, guid: 7c19317d2a50eb2479b81d375482b470, type: 3}
   imaginaryWorldSprite: {fileID: 21300000, guid: 17852c3a428e98d4181d42d5e1b351de, type: 3}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &459356435
 GameObject:
@@ -4956,6 +4995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &466070573
 GameObject:
@@ -6176,6 +6216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &609846502
 GameObject:
@@ -6537,6 +6578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &646303272
 GameObject:
@@ -6667,6 +6709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &646885371
 GameObject:
@@ -6792,6 +6835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &708003421
 GameObject:
@@ -6939,10 +6983,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2070953785}
-  - {fileID: 1187056071}
   - {fileID: 1577852870}
   - {fileID: 1091665872}
   - {fileID: 214043171}
+  - {fileID: 964290718}
   m_Father: {fileID: 849676590}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7061,6 +7105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!61 &733299358
 BoxCollider2D:
@@ -7605,6 +7650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &772447945
 GameObject:
@@ -7913,6 +7959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &841050391
 GameObject:
@@ -8038,6 +8085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &849676589
 GameObject:
@@ -8493,6 +8541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &923781131
 GameObject:
@@ -8706,6 +8755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &928715139
 GameObject:
@@ -8885,6 +8935,22 @@ Transform:
   m_Father: {fileID: 1309324735}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &964290718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+  m_PrefabInstance: {fileID: 420348790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &964290721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7285848089267536384, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
+  m_PrefabInstance: {fileID: 420348790}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &982789397
 GameObject:
   m_ObjectHideFlags: 0
@@ -9117,6 +9183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &996163816
 PrefabInstance:
@@ -9675,6 +9742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1065683672
 GameObject:
@@ -9800,6 +9868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1085730244
 GameObject:
@@ -10099,7 +10168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5153506362832452875, guid: d92af2fbfb9b1f943a8aa990c825907c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5153506362832452875, guid: d92af2fbfb9b1f943a8aa990c825907c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10230,17 +10299,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3751250630417153694, guid: 8647089fb84ff47448899f67b068aaa8, type: 3}
   m_PrefabInstance: {fileID: 3751250629391200190}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1160499489 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3751250630417153695, guid: 8647089fb84ff47448899f67b068aaa8, type: 3}
-  m_PrefabInstance: {fileID: 3751250629391200190}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1167575640
 GameObject:
   m_ObjectHideFlags: 0
@@ -10492,23 +10550,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
---- !u!4 &1187056071 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-  m_PrefabInstance: {fileID: 1966235155}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1187056073 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7285848089267536384, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-  m_PrefabInstance: {fileID: 1966235155}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1190053628
 GameObject:
   m_ObjectHideFlags: 0
@@ -10791,6 +10834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1211970772
 GameObject:
@@ -11487,6 +11531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1001 &1321701104
 PrefabInstance:
@@ -11739,6 +11784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1335278916
 GameObject:
@@ -11987,6 +12033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1342296069
 GameObject:
@@ -12208,6 +12255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1343291555
 GameObject:
@@ -12333,6 +12381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1371963940
 GameObject:
@@ -12668,6 +12717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &1440692394
 PrefabInstance:
@@ -12951,6 +13001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!4 &1458717819 stripped
 Transform:
@@ -13086,6 +13137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1479118334
 GameObject:
@@ -13325,6 +13377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1533879420
 GameObject:
@@ -13677,6 +13730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1589538791
 GameObject:
@@ -13802,6 +13856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1001 &1594067945
 PrefabInstance:
@@ -13865,17 +13920,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7919592918172513557, guid: c664bcf3dc87bdf4095f408461fd1eab, type: 3}
   m_PrefabInstance: {fileID: 1594067945}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1647490544 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4939425080561740039, guid: 2d206aef9dd715848a9fc2fa6da9a500, type: 3}
-  m_PrefabInstance: {fileID: 1753087237}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1647490547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8707470355889597925, guid: 2d206aef9dd715848a9fc2fa6da9a500, type: 3}
@@ -14156,6 +14200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &1693069265
 PrefabInstance:
@@ -14287,6 +14332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1694598696
 GameObject:
@@ -14574,6 +14620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &1709491536
 PrefabInstance:
@@ -14801,6 +14848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &1753087237
 PrefabInstance:
@@ -15203,6 +15251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1804630988
 GameObject:
@@ -15415,6 +15464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1845689601
 GameObject:
@@ -15689,6 +15739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1877951035
 GameObject:
@@ -15977,6 +16028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1924548634
 GameObject:
@@ -16137,6 +16189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &1945122233
 GameObject:
@@ -16376,64 +16429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
---- !u!1001 &1966235155
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 720124750}
-    m_Modifications:
-    - target: {fileID: 7285848089267536396, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_Name
-      value: Real_World_Shelf
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -130.99864
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -43.32636
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 137.43828
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285848089267536399, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a5b3b2f70a76f3945a2754f58fd60a46, type: 3}
 --- !u!1 &1968349935
 GameObject:
   m_ObjectHideFlags: 0
@@ -16530,17 +16527,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1980064208 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3751250630417153695, guid: 8647089fb84ff47448899f67b068aaa8, type: 3}
-  m_PrefabInstance: {fileID: 595173919}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1982990030
 GameObject:
   m_ObjectHideFlags: 0
@@ -16665,6 +16651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1987462900
 GameObject:
@@ -16790,6 +16777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   imaginaryWorldSprite: {fileID: 4170528395247394346, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
+  animator: {fileID: 0}
   isImaginary: 1
 --- !u!1 &1989415910
 GameObject:
@@ -17085,6 +17073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1 &2013538143
 GameObject:
@@ -17685,6 +17674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 9199314739655320847, guid: 7a8a17f047608eb438b4fb382cce66e8, type: 3}
   imaginaryWorldSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!1001 &3006180635467861353
 PrefabInstance:

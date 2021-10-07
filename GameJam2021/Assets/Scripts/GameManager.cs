@@ -55,6 +55,15 @@ public class GameManager : Singleton<GameManager>
             platform.gameObject.GetComponent<SpriteRenderer>().sprite = isImaginaryWorld ? platform.imaginaryWorldSprite : platform.realWorldSprite;
             if(platform.GetComponent<BoxCollider2D>() != null)
             platform.GetComponent<BoxCollider2D>().enabled = platform.isImaginary ? isImaginaryWorld : !isImaginaryWorld;
+
+            if(platform.animator != null && isImaginaryWorld)
+            {
+                platform.animator.enabled = true;
+            }
+            else if(platform.animator != null && !isImaginaryWorld)
+            {
+                platform.animator.enabled = false;
+            }
         }
     }
 

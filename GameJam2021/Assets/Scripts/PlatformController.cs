@@ -6,5 +6,6 @@ public class PlatformController : MonoBehaviour
 {
     public Sprite realWorldSprite;
     public Sprite imaginaryWorldSprite;
+    public Animator animator;
     public bool isImaginary;
 }
