@@ -13,13 +13,38 @@ public class GameManager : Singleton<GameManager>
     public int totalObjectives;
 
     public bool isImaginaryWorld;
+    public bool isPaused;
 
+    public GameObject pauseCanvas;
     private void Start()
     {
         collectedObjectives = 0;
         totalObjectives = objectives.Count;
         isImaginaryWorld = false;
         SwapBetweenWorlds();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        isPaused = !isPaused;
+        if (!isPaused)
+        {
+            Time.timeScale = 0;
+            pauseCanvas.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pauseCanvas.SetActive(false);
+        }
     }
 
     public void SwapBetweenWorlds()
