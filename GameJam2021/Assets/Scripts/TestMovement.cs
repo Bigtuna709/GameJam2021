@@ -31,7 +31,9 @@ public class TestMovement : MonoBehaviour
     void Update()
     {
         Move();
-        if (Input.GetKey(KeyCode.Space))
+        if (movement != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+            PlayRandom();
+        if (Input.GetKey(KeyCode.Space) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
             Jump();
         }
@@ -120,7 +122,7 @@ public class TestMovement : MonoBehaviour
 
     void PlayRandom()
     {
-        GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
+       // GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
         GetComponent<AudioSource>().Play();
     }
 }
