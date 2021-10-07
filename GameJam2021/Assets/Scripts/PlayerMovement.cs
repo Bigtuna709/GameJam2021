@@ -71,7 +71,11 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-        transform.localScale = movement > 0 ? new Vector2(-1f, 1f) : new Vector2(1f, 1f);
+
+        if(movement != 0)
+        {
+            transform.localScale = movement > 0 ? new Vector2(-1f, 1f) : new Vector2(1f, 1f);
+        }
 
         if (currentState.Equals("Run") && movement == 0)
         {
