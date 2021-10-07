@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4264249021301269124}
   - component: {fileID: 2947121985967365427}
   - component: {fileID: 2287255111926525820}
+  - component: {fileID: -2648679040866480921}
   m_Layer: 0
   m_Name: MicToy_Collectable
   m_TagString: Objective
@@ -96,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd59a1dc4bb1ec45b89e6e81dd46de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  animator: {fileID: -2648679040866480921}
 --- !u!61 &2287255111926525820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,3 +125,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6369934, y: 1.8308821}
   m_EdgeRadius: 0
+--- !u!95 &-2648679040866480921
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243076683147198509}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e63405e2937995a4ba0ccfd685143dea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

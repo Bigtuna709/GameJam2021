@@ -3,7 +3,7 @@ using UnityEngine;
 public class ObjectiveController : MonoBehaviour
 {
     public GameObject sound;
-    public Animation animator;
+    public Animator animator;
 
     public void Awake()
     {

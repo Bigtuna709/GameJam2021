@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8316736621114228430}
   - component: {fileID: 2535241084395005488}
   - component: {fileID: 8783742372414264663}
+  - component: {fileID: 8755539500071334305}
   m_Layer: 0
   m_Name: Toothbrush_Collectable
   m_TagString: Objective
@@ -96,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd59a1dc4bb1ec45b89e6e81dd46de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  animator: {fileID: 8755539500071334305}
 --- !u!61 &8783742372414264663
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,3 +125,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5362244, y: 1.6835508}
   m_EdgeRadius: 0
+--- !u!95 &8755539500071334305
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457497270691404604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f9aa8a97ee0bcd438d5bd76ef6ed657, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
