@@ -16,7 +16,7 @@ public class SceneChanger : MonoBehaviour
     public void ExitGame()
     {
         Debug.Log("Exit Game!"); 
-        QuitGameWithDelay();
+        StartCoroutine(QuitGameWithDelay());
     }
 
     private IEnumerator ChangeSceneWithDlay(int sceneId)
