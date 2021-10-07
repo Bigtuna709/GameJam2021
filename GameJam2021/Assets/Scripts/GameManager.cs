@@ -15,6 +15,7 @@ public class GameManager : Singleton<GameManager>
     public bool isImaginaryWorld;
     public bool isPaused;
 
+    public GameObject win;
     public GameObject pauseCanvas;
     private void Start()
     {
@@ -72,6 +73,7 @@ public class GameManager : Singleton<GameManager>
         Time.timeScale = 0.3f;
         yield return new WaitForSeconds(.5f);
         Time.timeScale = 1f;
+        win.GetComponent<AudioSource>().Play();
         print("You won!");
         ResetLevel();
     }
