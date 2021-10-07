@@ -7,18 +7,22 @@ public class TestMovement : MonoBehaviour
 {
     public SkeletonAnimation skeletonAnimation;
     public AnimationReferenceAsset idle, run, jump;
+
     public string currentState;
     public float speed;
     public float movement;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D _rigidbody;
+
     public string currentAnimation;
     public float jumpSpeed;
     public string previousState;
 
+    public AudioClip[] audioClips;
+
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
         currentState = "Idle";
         SetCharacterState(currentState);
     }
@@ -75,7 +79,7 @@ public class TestMovement : MonoBehaviour
     public void Move()
     {
         movement = Input.GetAxis("Horizontal");
-        rigidbody.velocity = new Vector2(movement * speed, rigidbody.velocity.y);
+        _rigidbody.velocity = new Vector2(movement * speed, _rigidbody.velocity.y);
         if (movement != 0)
         {
             if (!currentState.Equals("Jump"))
@@ -106,11 +110,17 @@ public class TestMovement : MonoBehaviour
 
     public void Jump()
     {
-        rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpSpeed);
+        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, jumpSpeed);
         if (!currentState.Equals("Jump"))
         {
             previousState = currentState;
         }
         SetCharacterState("Jump");
+    }
+
+    void PlayRandom()
+    {
+        GetComponent<AudioSource>().clip = audioClips[Random.Range(0, audioClips.Length)];
+        GetComponent<AudioSource>().Play();
     }
 }
