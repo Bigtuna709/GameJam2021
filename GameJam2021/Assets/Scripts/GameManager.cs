@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
+    public PlayerMovement player;
+
     public List<PlatformController> allPlatforms = new List<PlatformController>();
     public List<ObjectiveController> objectives = new List<ObjectiveController>();
+
     public int collectedObjectives;
     public int totalObjectives;
-    public PlayerMovement player;
 
     public bool isImaginaryWorld;
 
@@ -25,6 +27,7 @@ public class GameManager : Singleton<GameManager>
         foreach (PlatformController platform in allPlatforms)
         {
             platform.gameObject.GetComponent<SpriteRenderer>().sprite = isImaginaryWorld ? platform.imaginaryWorldSprite : platform.realWorldSprite;
+            if(platform.GetComponent<BoxCollider2D>() != null)
             platform.GetComponent<BoxCollider2D>().enabled = platform.isImaginary ? isImaginaryWorld : !isImaginaryWorld;
         }
     }
@@ -35,12 +38,15 @@ public class GameManager : Singleton<GameManager>
         print(collectedObjectives + " / " + totalObjectives + " items collected!");
         if(collectedObjectives == totalObjectives)
         {
-            Victory();
+            StartCoroutine(Victory());
         }
     }
 
-    public void Victory()
+    public IEnumerator Victory()
     {
+        Time.timeScale = 0.3f;
+        yield return new WaitForSeconds(.5f);
+        Time.timeScale = 1f;
         print("You won!");
         ResetLevel();
     }
