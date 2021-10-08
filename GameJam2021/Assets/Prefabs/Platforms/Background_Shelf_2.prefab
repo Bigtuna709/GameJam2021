@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 1316996944547688243, guid: 5fa7e4e0e23caf949b90e879f554443f, type: 3}
   imaginaryWorldSprite: {fileID: 0}
+  animator: {fileID: 0}
   isImaginary: 0
 --- !u!61 &3751250630417153693
 BoxCollider2D:
@@ -113,7 +114,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.005003214, y: -0.034811556}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -124,7 +125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.09, y: 0.49}
+  m_Size: {x: 2.046648, y: 0.4203769}
   m_EdgeRadius: 0
 --- !u!114 &-6349178989048815991
 MonoBehaviour:
@@ -140,4 +141,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 1316996944547688243, guid: 5fa7e4e0e23caf949b90e879f554443f, type: 3}
   imaginaryWorldSprite: {fileID: 0}
+  animator: {fileID: 0}
   isImaginary: 0
