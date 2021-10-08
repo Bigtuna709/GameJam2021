@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public string previousState;
     public string currentAnimation;
 
-    private Rigidbody2D _rigidbody;
+    [HideInInspector] public Rigidbody2D _rigidbody;
 
     public Vector2 startPosition;
 
