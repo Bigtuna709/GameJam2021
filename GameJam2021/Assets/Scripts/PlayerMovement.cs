@@ -111,13 +111,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Lava") && GameManager.Instance.isImaginaryWorld)
-        {
-            Death();
-        }
-    }
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Lava") && GameManager.Instance.isImaginaryWorld)
+    //    {
+    //        Death();
+    //    }
+    //}
 
     public void ResetPosition()
     {
