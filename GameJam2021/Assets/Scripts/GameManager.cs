@@ -20,6 +20,7 @@ public class GameManager : Singleton<GameManager>
     public Text totalObjectivesText;
 
     public GameObject win;
+    public GameObject winCanvas;
     public GameObject pauseCanvas;
     public GameObject realWorldText;
     public GameObject imaginaryWorldText;
@@ -103,11 +104,13 @@ public class GameManager : Singleton<GameManager>
         Time.timeScale = 1f;
         win.GetComponent<AudioSource>().Play();
         print("You won!");
-        ResetLevel();
+        winCanvas.SetActive(true);
+        //ResetLevel();
     }
 
     public void ResetLevel()
     {
+        winCanvas.SetActive(false);
         player.ResetPosition();
         objectives.ForEach(o => o.gameObject.SetActive(true));
         collectedObjectives = 0;
