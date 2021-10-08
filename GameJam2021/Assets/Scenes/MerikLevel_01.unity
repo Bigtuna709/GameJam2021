@@ -2085,6 +2085,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2535241084395005488, guid: 4d1aedac250e55a4581e06dbb2c9cf9a, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d1aedac250e55a4581e06dbb2c9cf9a, type: 3}
 --- !u!4 &195748244 stripped
@@ -5222,7 +5226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559125589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0012817383, y: 1.0772619, z: 0}
+  m_LocalPosition: {x: -0.0012817383, y: 1.0783396, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1771777943}
@@ -5388,6 +5392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: T-Shirt
       objectReference: {fileID: 0}
+    - target: {fileID: 3006180634688882965, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
 --- !u!1 &609846502
@@ -6445,6 +6453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2947121985967365427, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     - target: {fileID: 4243076683147198509, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
       propertyPath: m_Name
       value: MicToy_Collectable
@@ -8695,6 +8707,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2947121985967365427, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     - target: {fileID: 4243076683147198509, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
       propertyPath: m_Name
       value: MicToy_Collectable
@@ -9502,6 +9518,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2535241084395005488, guid: 4d1aedac250e55a4581e06dbb2c9cf9a, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d1aedac250e55a4581e06dbb2c9cf9a, type: 3}
 --- !u!114 &992263543 stripped
@@ -9787,6 +9807,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcfaf8a3f1bfe24d8a4941940a85d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1015796346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015796347}
+  m_Layer: 0
+  m_Name: Home
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1015796347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015796346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -258.81, y: 6.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058814241
 GameObject:
   m_ObjectHideFlags: 0
@@ -14070,6 +14120,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1548618105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3006180634688882963, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
+  m_PrefabInstance: {fileID: 2138119250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1548618106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548618105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db33650d9f404f84f9b6e5ff1c770061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  home: {fileID: 1015796346}
 --- !u!1001 &1552262936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15974,6 +16043,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2947121985967365427, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     - target: {fileID: 4243076683147198509, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
       propertyPath: m_Name
       value: MicToy_Collectable
@@ -18510,6 +18583,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1985344465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7742616649675766239, guid: cc38ee3ce7fe45e4d8ca31af694e0e0a, type: 3}
+  m_PrefabInstance: {fileID: 7742616650654705106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2021151472
 GameObject:
   m_ObjectHideFlags: 0
@@ -20099,6 +20177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: T-Shirt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3006180634688882965, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1985344465}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
 --- !u!4 &2138119251 stripped
@@ -20111,7 +20193,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3006180634688882965, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
   m_PrefabInstance: {fileID: 2138119250}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1548618105}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dd59a1dc4bb1ec45b89e6e81dd46de2, type: 3}
