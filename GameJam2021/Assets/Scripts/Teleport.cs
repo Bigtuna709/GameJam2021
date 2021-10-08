@@ -5,7 +5,6 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     public PlayerMovement player;
-    public GameObject home;
 
     private void Awake()
     {
@@ -15,7 +14,7 @@ public class Teleport : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.transform.position = home.transform.position;
+            player.Teleport();
         }
     }
 }
