@@ -148,6 +148,7 @@ MonoBehaviour:
   currentState: 
   previousState: 
   currentAnimation: 
+  _rigidbody: {fileID: 0}
   startPosition: {x: 0, y: 0}
 --- !u!82 &3679735761111459882
 AudioSource:
