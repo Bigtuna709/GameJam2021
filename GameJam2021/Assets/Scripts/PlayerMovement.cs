@@ -43,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.SwapBetweenWorlds();
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+            GameManager.Instance.SwapBetweenWorlds();
+        }
+
         if (Mathf.Abs(_rigidbody.velocity.y) == 0)
         {
             if (Input.GetButtonDown("Jump"))
