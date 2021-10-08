@@ -43,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.SwapBetweenWorlds();
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+            GameManager.Instance.SwapBetweenWorlds();
+        }
+
         if (Mathf.Abs(_rigidbody.velocity.y) == 0)
         {
             if (Input.GetButtonDown("Jump"))
@@ -59,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator IdleState()
     {
         SetCharacterState("Idle");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         if (_rigidbody.velocity.y < 0.1f )
         {
             SetCharacterState("Idle2");
@@ -111,13 +117,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Lava") && GameManager.Instance.isImaginaryWorld)
-        {
-            Death();
-        }
-    }
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Lava") && GameManager.Instance.isImaginaryWorld)
+    //    {
+    //        Death();
+    //    }
+    //}
 
     public void ResetPosition()
     {

@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: ad2c0cf6327e14b48a6e51ec1f8382f9
   - enabled: 1
-    path: Assets/Scenes/RobertScene.unity
-    guid: d2762ad798b2f8942be651be82c40008
+    path: Assets/Scenes/MerikLevel_01.unity
+    guid: 685815af1ba74c24a9ac4dfa3598ae1d
   m_configObjects: {}

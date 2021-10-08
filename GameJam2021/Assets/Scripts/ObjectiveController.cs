@@ -7,7 +7,7 @@ public class ObjectiveController : MonoBehaviour
 
     public void Awake()
     {
-        animator.Play("MicToy_a");    
+        //animator.Play("MicToy_a");
     }
 
     public void Collect()
