@@ -9859,6 +9859,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2947121985967365427, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1304337421}
     - target: {fileID: 4243076683147198509, guid: c8446b6500ae5e0479473d6a33f14ed5, type: 3}
       propertyPath: m_Name
       value: MicToy_Collectable
@@ -14854,6 +14858,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3006180634688882965, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1304337421}
     - target: {fileID: 4208102295182358682, guid: 62d192581b6d80149889930638b7b7c6, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -21240,6 +21248,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2535241084395005488, guid: 4d1aedac250e55a4581e06dbb2c9cf9a, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1304337421}
     - target: {fileID: 8755539500071334305, guid: 4d1aedac250e55a4581e06dbb2c9cf9a, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
