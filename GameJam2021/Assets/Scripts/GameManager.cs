@@ -98,6 +98,7 @@ public class GameManager : Singleton<GameManager>
         player.ResetPosition();
         objectives.ForEach(o => o.gameObject.SetActive(true));
         collectedObjectives = 0;
+        collectedObjectiveText.text = collectedObjectives.ToString();
         isImaginaryWorld = false;
         SwapBetweenWorlds();
     }
