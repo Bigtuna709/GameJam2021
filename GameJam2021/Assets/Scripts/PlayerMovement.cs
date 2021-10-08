@@ -167,4 +167,15 @@ public class PlayerMovement : MonoBehaviour
             SetAnimation(idle, true, 1f);
         }
     }
+
+    public void Teleport()
+    {
+        StartCoroutine(TeleportwithDlay());
+    }
+
+    public IEnumerator TeleportwithDlay()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        transform.position = startPosition;
+    }
 }
