@@ -817,6 +817,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &35859115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7751757954768940795, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+  m_PrefabInstance: {fileID: 865299408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &43238599
 GameObject:
   m_ObjectHideFlags: 0
@@ -4659,6 +4664,8 @@ MonoBehaviour:
   totalObjectivesText: {fileID: 2035411243}
   win: {fileID: 1167575640}
   pauseCanvas: {fileID: 982789397}
+  realWorldText: {fileID: 1412864731}
+  imaginaryWorldText: {fileID: 35859115}
 --- !u!4 &438878166
 Transform:
   m_ObjectHideFlags: 0
@@ -8796,6 +8803,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 300450784249736705, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 300450784249736707, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_Text
+      value: 'Remember to finish cleaning room!
+
+        Use your imagination to
+        help!
+
+
+        Press "E" or "Shift" to use your imagination!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.74586
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.74586
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.74586
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9883548
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.15216719
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727570101538530309, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -17.505
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751757954768940795, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846431058892144508, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+      propertyPath: m_FontData.m_FontStyle
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14174,6 +14231,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1412864731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 300450784249736705, guid: a83c6218e0650564a9ae53358c199b7a, type: 3}
+  m_PrefabInstance: {fileID: 865299408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1422399315
 PrefabInstance:
   m_ObjectHideFlags: 0
