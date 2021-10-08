@@ -133,12 +133,12 @@ TextureImporter:
       name: ButtonSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1025
-        width: 505
-        height: 505
+        x: 19
+        y: 1159
+        width: 463
+        height: 218
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: ButtonSheet_1
       rect:
         serializedVersion: 2
-        x: 510
-        y: 1025
-        width: 505
-        height: 505
+        x: 533
+        y: 1169
+        width: 458
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: ButtonSheet_2
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 1025
-        width: 505
-        height: 505
+        x: 1045
+        y: 1166
+        width: 457
+        height: 207
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: ButtonSheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 515
-        width: 505
-        height: 505
+        x: 24
+        y: 656
+        width: 456
+        height: 202
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: ButtonSheet_4
       rect:
         serializedVersion: 2
-        x: 510
-        y: 515
-        width: 505
-        height: 505
+        x: 534
+        y: 654
+        width: 459
+        height: 218
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: ButtonSheet_5
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 515
-        width: 505
-        height: 505
+        x: 1039
+        y: 650
+        width: 468
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: ButtonSheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5
-        width: 505
-        height: 505
+        x: 23
+        y: 148
+        width: 459
+        height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: ButtonSheet_7
       rect:
         serializedVersion: 2
-        x: 510
-        y: 5
-        width: 505
-        height: 505
+        x: 537
+        y: 148
+        width: 453
+        height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: ButtonSheet_8
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 5
-        width: 505
-        height: 505
+        x: 1039
+        y: 137
+        width: 465
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
