@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -15,12 +16,16 @@ public class GameManager : Singleton<GameManager>
     public bool isImaginaryWorld;
     public bool isPaused;
 
+    public Text collectedObjectiveText;
+    public Text totalObjectivesText;
+
     public GameObject win;
     public GameObject pauseCanvas;
     private void Start()
     {
         collectedObjectives = 0;
         totalObjectives = objectives.Count;
+        totalObjectivesText.text = totalObjectives.ToString();
         isImaginaryWorld = false;
         SwapBetweenWorlds();
     }
@@ -70,6 +75,7 @@ public class GameManager : Singleton<GameManager>
     public void CollectObjective()
     {
         collectedObjectives++;
+        collectedObjectiveText.text = collectedObjectives.ToString();
         print(collectedObjectives + " / " + totalObjectives + " items collected!");
         if(collectedObjectives == totalObjectives)
         {

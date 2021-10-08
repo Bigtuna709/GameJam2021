@@ -1760,8 +1760,8 @@ RectTransform:
   - {fileID: 320793785}
   - {fileID: 1618647888}
   - {fileID: 1923445464}
-  - {fileID: 1210075547}
   - {fileID: 437772206}
+  - {fileID: 1210075547}
   - {fileID: 2035411242}
   m_Father: {fileID: 933332642}
   m_RootOrder: 0
@@ -3972,7 +3972,7 @@ GameObject:
   - component: {fileID: 437772208}
   - component: {fileID: 437772207}
   m_Layer: 5
-  m_Name: Line_IMG (1)
+  m_Name: LineSlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3990,7 +3990,7 @@ RectTransform:
   m_LocalScale: {x: 0.32937112, y: 0.02745611, z: 1}
   m_Children: []
   m_Father: {fileID: 133190554}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -101.106}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4190,6 +4190,8 @@ MonoBehaviour:
   totalObjectives: 0
   isImaginaryWorld: 0
   isPaused: 0
+  collectedObjectiveText: {fileID: 1210075548}
+  totalObjectivesText: {fileID: 2035411243}
   win: {fileID: 1167575640}
   pauseCanvas: {fileID: 982789397}
 --- !u!4 &438878166
@@ -11207,7 +11209,7 @@ GameObject:
   - component: {fileID: 1210075549}
   - component: {fileID: 1210075548}
   m_Layer: 5
-  m_Name: Obj_Picked
+  m_Name: Obj_Collected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11225,7 +11227,7 @@ RectTransform:
   m_LocalScale: {x: 0.8004687, y: 1.4131416, z: 1}
   m_Children: []
   m_Father: {fileID: 133190554}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18787,7 +18789,7 @@ GameObject:
   - component: {fileID: 2035411244}
   - component: {fileID: 2035411243}
   m_Layer: 5
-  m_Name: Obj_Picked (1)
+  m_Name: Obj_Total
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
