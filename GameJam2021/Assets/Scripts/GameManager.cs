@@ -21,6 +21,9 @@ public class GameManager : Singleton<GameManager>
 
     public GameObject win;
     public GameObject pauseCanvas;
+    public GameObject realWorldText;
+    public GameObject imaginaryWorldText;
+
     private void Start()
     {
         collectedObjectives = 0;
@@ -69,6 +72,16 @@ public class GameManager : Singleton<GameManager>
             {
                 platform.animator.enabled = false;
             }
+        }
+        if(!isImaginaryWorld)
+        {
+            realWorldText.SetActive(true);
+            imaginaryWorldText.SetActive(false);
+        }
+        else
+        {
+            realWorldText.SetActive(false);
+            imaginaryWorldText.SetActive(true);
         }
     }
 
