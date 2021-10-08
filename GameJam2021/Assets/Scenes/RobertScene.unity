@@ -3162,6 +3162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &253141226
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4490,6 +4491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &402208627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5454,6 +5456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &530581363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11861,6 +11864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &1335278920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13547,6 +13551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &1568562831
 SpriteRenderer:
   m_ObjectHideFlags: 0
