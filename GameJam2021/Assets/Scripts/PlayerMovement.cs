@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator TeleportwithDlay()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.2f);
         transform.position = startPosition;
     }
 }

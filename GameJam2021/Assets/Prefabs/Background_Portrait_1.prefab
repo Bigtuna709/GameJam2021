@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4155672072488690226}
   - component: {fileID: 4155672072488690237}
   - component: {fileID: 4155672072488690227}
+  - component: {fileID: 3382065792683720711}
   m_Layer: 0
   m_Name: Background_Portrait_1
   m_TagString: Untagged
@@ -97,4 +98,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realWorldSprite: {fileID: 3744409095782383227, guid: 5fa7e4e0e23caf949b90e879f554443f, type: 3}
   imaginaryWorldSprite: {fileID: -7104530731180433036, guid: 1d3b5e15519e01547a0fe530358c4d0c, type: 3}
+  animator: {fileID: 0}
   isImaginary: 0
+--- !u!95 &3382065792683720711
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155672072488690236}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b7c300d8dbeb2445ad3510a8ddcaddf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

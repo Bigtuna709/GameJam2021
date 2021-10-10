@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 881086925372529713}
   - component: {fileID: 881086925372529716}
   - component: {fileID: 881086925372529719}
+  - component: {fileID: 8896371998131984343}
   m_Layer: 0
   m_Name: Real_World_Closet
   m_TagString: Untagged
@@ -120,6 +121,32 @@ MonoBehaviour:
   imaginaryWorldSprite: {fileID: 4685326458197749688, guid: 95763a4a0089f8a4ba531a9b699615e0, type: 3}
   animator: {fileID: 881086925372529716}
   isImaginary: 0
+--- !u!61 &8896371998131984343
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881086925372529712}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.10347867}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.97, y: 5.64}
+    newSize: {x: 3.97, y: 5.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.97, y: 5.314218}
+  m_EdgeRadius: 0
 --- !u!1 &5260466308858496400
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +191,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009216309, y: -0.009214401}
+  m_Offset: {x: -0.009216309, y: -0.025245667}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -175,5 +202,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.8934326, y: 5.588955}
+  m_Size: {x: 3.8934326, y: 5.5568924}
   m_EdgeRadius: 0

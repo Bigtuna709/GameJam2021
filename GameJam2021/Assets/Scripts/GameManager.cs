@@ -101,7 +101,7 @@ public class GameManager : Singleton<GameManager>
     {
         Time.timeScale = 0.3f;
         yield return new WaitForSeconds(.5f);
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
         win.GetComponent<AudioSource>().Play();
         print("You won!");
         winCanvas.SetActive(true);
