@@ -51,6 +51,30 @@ public class GameManager : Singleton<GameManager>
             }
   
         }
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button7))
+        {
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button9))
+        {
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
     }
 
     public void Resume()

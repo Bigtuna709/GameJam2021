@@ -64,11 +64,38 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.Joystick1Button4))
+        {
+            if (GameManager.Instance.isPaused == false)
+            {
+                GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+                GameManager.Instance.SwapBetweenWorlds();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button5))
+        {
+            if (GameManager.Instance.isPaused == false)
+            {
+                GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+                GameManager.Instance.SwapBetweenWorlds();
+            }
+            else
+            {
+                return;
+            }
+        }
+
         if (Mathf.Abs(_rigidbody.velocity.y) == 0)
         {
             if (Input.GetButtonDown("Jump"))
             {
                 Jump();
+
             }
             else if (movement == 0 && !currentState.Equals("Idle2") && !currentState.Equals("Idle"))
             {
