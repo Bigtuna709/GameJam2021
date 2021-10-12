@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MerikLevel_02.unity
     guid: f0661ce83d4f7ef418c5bbf138f9f311
+  - enabled: 1
+    path: Assets/Scenes/MerikLevel_03.unity
+    guid: 5239d67eec435314da70bcb8c3942e5a
   m_configObjects: {}
