@@ -19,6 +19,12 @@ public class SceneChanger : MonoBehaviour
         StartCoroutine(QuitGameWithDelay());
     }
 
+    public void NextLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     private IEnumerator ChangeSceneWithDlay(int sceneId)
     {
         yield return new WaitForSecondsRealtime(0.4f);

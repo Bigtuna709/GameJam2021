@@ -36,17 +36,32 @@ public class PlayerMovement : MonoBehaviour
         if (movement != 0 && GetComponent<AudioSource>().isPlaying == false && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
             PlayRandom();
 
-
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
-            GameManager.Instance.SwapBetweenWorlds();
+            if(GameManager.Instance.isPaused == false)
+            {
+                GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+                GameManager.Instance.SwapBetweenWorlds();
+            }
+            else
+            {
+                return;
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
-            GameManager.Instance.SwapBetweenWorlds();
+            if (GameManager.Instance.isPaused == false)
+            {
+                GameManager.Instance.isImaginaryWorld = !GameManager.Instance.isImaginaryWorld;
+                GameManager.Instance.SwapBetweenWorlds();
+            }
+            else
+            {
+                return;
+            }
+
         }
 
         if (Mathf.Abs(_rigidbody.velocity.y) == 0)
@@ -81,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         MoveCharacter();
+
     }
 
     private void MoveCharacter()

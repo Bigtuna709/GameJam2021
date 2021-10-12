@@ -12,9 +12,12 @@ public class GameManager : Singleton<GameManager>
 
     public int collectedObjectives;
     public int totalObjectives;
+    public int levelToUnlock = 2;
 
     public bool isImaginaryWorld;
     public bool isPaused;
+
+    public string nextLevel = "Level02";
 
     public Text collectedObjectiveText;
     public Text totalObjectivesText;
@@ -38,23 +41,29 @@ public class GameManager : Singleton<GameManager>
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseGame();
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                PauseGame();
+            }
+  
         }
     }
 
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        pauseCanvas.SetActive(false);
+        isPaused = false;
+    }
     public void PauseGame()
     {
-        isPaused = !isPaused;
-        if (isPaused)
-        {
-            Time.timeScale = 0;
-            pauseCanvas.SetActive(true);
-        }
-        else
-        {
-            Time.timeScale = 1;
-            pauseCanvas.SetActive(false);
-        }
+        Time.timeScale = 0;
+        pauseCanvas.SetActive(true);
+        isPaused = true;
     }
 
     public void SwapBetweenWorlds()
@@ -94,6 +103,7 @@ public class GameManager : Singleton<GameManager>
         if(collectedObjectives == totalObjectives)
         {
             StartCoroutine(Victory());
+            PlayerPrefs.SetInt("levelReached", levelToUnlock);
         }
     }
 
