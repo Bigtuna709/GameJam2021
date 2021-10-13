@@ -24,6 +24,8 @@ public class LevelSelector : MonoBehaviour
 
     public void LevelSelect(string levelName)
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(levelName);
     }
 

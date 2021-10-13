@@ -79,12 +79,16 @@ public class GameManager : Singleton<GameManager>
 
     public void Resume()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
         pauseCanvas.SetActive(false);
         isPaused = false;
     }
     public void PauseGame()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         Time.timeScale = 0;
         pauseCanvas.SetActive(true);
         isPaused = true;
@@ -138,6 +142,8 @@ public class GameManager : Singleton<GameManager>
         Time.timeScale = 0f;
         win.GetComponent<AudioSource>().Play();
         print("You won!");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         winCanvas.SetActive(true);
         //ResetLevel();
     }

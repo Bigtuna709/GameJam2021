@@ -8,6 +8,8 @@ public class SceneChanger : MonoBehaviour
     public void PlayGame()
     {
         StartCoroutine(ChangeSceneWithDlay(1));
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     public void MainMenu()
     {
@@ -21,6 +23,8 @@ public class SceneChanger : MonoBehaviour
 
     public void NextLevel()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
