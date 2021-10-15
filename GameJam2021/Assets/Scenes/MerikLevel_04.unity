@@ -22617,6 +22617,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a3aaefecf678db448b53bbe51c8eb517, type: 2}
     - target: {fileID: 3679735761111459883, guid: 00785177785ea6944988409ae81d0f26, type: 3}
+      propertyPath: MovementSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679735761111459883, guid: 00785177785ea6944988409ae81d0f26, type: 3}
       propertyPath: audioClips.Array.size
       value: 4
       objectReference: {fileID: 0}
