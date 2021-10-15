@@ -22,6 +22,11 @@ public class LevelSelector : MonoBehaviour
         }
     }
 
+    public void ResetProgress()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void LevelSelect(string levelName)
     {
         Cursor.visible = false;

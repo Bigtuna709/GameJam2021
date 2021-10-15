@@ -131,7 +131,10 @@ public class GameManager : Singleton<GameManager>
         if(collectedObjectives == totalObjectives)
         {
             StartCoroutine(Victory());
-            PlayerPrefs.SetInt("levelReached", levelToUnlock);
+            if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
+            {
+                PlayerPrefs.SetInt("levelReached", levelToUnlock);
+            }
         }
     }
 
